@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
 import { Link } from '@/i18n/navigation';
+import LangSwitcher from '@/components/lang-switcher';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -16,17 +17,19 @@ export default function HomePage({ params }: Props) {
   const t = useTranslations('HomePage');
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-6 p-8">
-      <h1 className="text-4xl font-bold">{t('title')}</h1>
-      <p className="max-w-md text-center text-lg text-gray-600 dark:text-gray-400">
-        {t('description')}
-      </p>
+    <div className="flex min-h-screen flex-col items-center justify-center gap-8 p-8">
+      <LangSwitcher />
+      <div className="flex flex-col items-center gap-4">
+        <h1 className="text-4xl font-bold">{t('title')}</h1>
+        <p className="max-w-md text-center text-lg text-muted-foreground">
+          {t('description')}
+        </p>
+      </div>
       <Link
-        href="/"
-        locale={locale === 'en' ? 'id' : 'en'}
-        className="rounded-lg bg-foreground px-6 py-3 text-background transition-opacity hover:opacity-90"
+        href="/examples"
+        className="rounded-lg bg-primary px-6 py-3 text-primary-foreground transition-opacity hover:opacity-90"
       >
-        {t('switchLocale')}
+        {t('goToExamples')}
       </Link>
     </div>
   );

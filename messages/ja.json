@@ -1,0 +1,30 @@
+{
+  "Metadata": {
+    "title": "Next.js i18n デモ"
+  },
+  "HomePage": {
+    "title": "こんにちは、世界！",
+    "description": "これはnext-intlを使用した国際化されたNext.jsアプリケーションです。",
+    "goToExamples": "サンプルを見る"
+  },
+  "ExamplesPage": {
+    "title": "コンポーネントの例",
+    "description": "このページでは、next-intlを使用したサーバーコンポーネントとクライアントコンポーネントを紹介します。",
+    "serverComponentTitle": "サーバーコンポーネント",
+    "serverComponentDescription": "このセクションはサーバーでレンダリングされます。現在のロケールは: {locale}。サーバーコンポーネントはクライアント側のJavaScriptなしでuseTranslationsを直接使用できます。",
+    "serverTimestamp": "サーバーレンダリング時刻: {timestamp}",
+    "clientComponentTitle": "クライアントコンポーネント",
+    "clientComponentDescription": "このセクションはクライアントコンポーネントです。インタラクティブなstateを持ち、クライアント側でuseTranslationsなどのhooksを使用できます。",
+    "counterLabel": "カウンター: {count}",
+    "increment": "増加",
+    "decrement": "減少",
+    "reset": "リセット",
+    "backHome": "← ホームに戻る"
+  },
+  "LangSwitcher": {
+    "label": "言語",
+    "en": "英語",
+    "id": "インドネシア語",
+    "ja": "日本語"
+  }
+}
