@@ -1,4 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + next-intl i18n Project Setup
+
+Initialized a **Next.js 16** project with **next-intl** for internationalization
+
+### Stack Installed
+- **Next.js 16.1.6** (App Router, Turbopack)
+- **TypeScript**, **Tailwind CSS v4**, **ESLint**
+- **Prettier** + `prettier-plugin-tailwindcss`
+- **shadcn/ui** (default config)
+- **next-intl** (locale-based routing)
+
+### Locales Configured
+- `en` (English) — default
+- `id` (Indonesian)
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── [locale]/
+│   │   ├── layout.tsx    ← Locale layout with NextIntlClientProvider
+│   │   └── page.tsx      ← Demo page with translated content + locale switch
+│   └── globals.css       ← Tailwind + shadcn CSS variables
+├── i18n/
+│   ├── routing.ts        ← Central routing config (locales, defaultLocale)
+│   ├── navigation.ts     ← Locale-aware Link, useRouter, etc.
+│   └── request.ts        ← Server request config (loads translation JSON)
+├── lib/
+│   └── utils.ts          ← shadcn cn() utility
+└── proxy.ts              ← Locale middleware (Next.js 16 uses proxy.ts)
+messages/
+├── en.json               ← English translations
+└── id.json               ← Indonesian translations
+```
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `next.config.ts` | Wrapped with `createNextIntlPlugin()` |
+| `routing.ts` | Defines supported locales (`en`, `id`) and default |
+| `proxy.ts` | Handles locale detection and routing |
+| `request.ts` | Loads message JSON based on resolved locale |
+| `navigation.ts` | Exports locale-aware `Link`, `useRouter`, etc. |
+| `layout.tsx` | Validates locale, provides `NextIntlClientProvider` |
+| `page.tsx` | Demo page with `useTranslations` and locale switch |
+
+
+---
+
+---
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 

@@ -1,0 +1,10 @@
+{
+  "Metadata": {
+    "title": "Demo i18n Next.js"
+  },
+  "HomePage": {
+    "title": "Halo, Dunia!",
+    "description": "Ini adalah aplikasi Next.js yang terinternasionalisasi menggunakan next-intl.",
+    "switchLocale": "Ganti ke Bahasa Inggris"
+  }
+}
