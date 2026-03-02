@@ -26,5 +26,7 @@
     "en": "English",
     "id": "Indonesian",
     "ja": "Japanese"
-  }
+  },
+  "welcome-message": "Welcome to The Khourt",
+  "continue-guest": "Continue as <span>Guest</span>"
 }

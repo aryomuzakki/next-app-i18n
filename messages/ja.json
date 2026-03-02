@@ -26,5 +26,7 @@
     "en": "英語",
     "id": "インドネシア語",
     "ja": "日本語"
-  }
+  },
+  "welcome-message": "Konnichiwa The Khourt",
+  "continue-guest": "<span>ゲスト</span>として続行します"
 }
