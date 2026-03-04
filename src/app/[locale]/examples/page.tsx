@@ -6,6 +6,7 @@ import LangSwitcher from "@/components/lang-switcher";
 import ServerInfo from "@/components/server-info";
 import Counter from "@/components/counter";
 import CounterZustand from "@/components/counter-zustand";
+import ThemeToggle from "@/components/theme-toggle";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -28,7 +29,10 @@ export default function ExamplesPage({ params }: Props) {
         >
           {t("backHome")}
         </Link>
-        <LangSwitcher />
+        <div className="flex items-center gap-4">
+          <LangSwitcher />
+          <ThemeToggle />
+        </div>
       </div>
 
       <div className="flex flex-col gap-2">

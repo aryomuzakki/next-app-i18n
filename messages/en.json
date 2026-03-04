@@ -28,5 +28,11 @@
     "en": "English",
     "id": "Indonesian",
     "ja": "Japanese"
+  },
+  "ThemeToggle": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   }
 }

@@ -28,5 +28,11 @@
     "en": "Inggris",
     "id": "Indonesia",
     "ja": "Jepang"
+  },
+  "ThemeToggle": {
+    "label": "Tema",
+    "light": "Terang",
+    "dark": "Gelap",
+    "system": "Sistem"
   }
 }
